@@ -5,8 +5,6 @@ html,body{
 }
 h1{
   color: rgb(193, 203, 212);
-  display: flex;
-  justify-content: flex-start;
   margin: auto;
 }
 h2{
@@ -17,24 +15,31 @@ h2{
   grid-template-rows:0fr 1fr 1fr;
 /**/
 }
+.name{
+
+
+}
 .nav{
   background-color: darkred;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   user-select: none;
+
 }
 .separator{
-  display: flex;
+  display: flex; /*  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;*/
   justify-content: space-around;
   gap: 20px;
   user-select: none;
+  margin-right: 40px;
 /*  cursor: pointer;*/
 }
 .navigator{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .inner-navigator{
   color: rgb(193, 203, 212);;
@@ -109,6 +114,7 @@ span{
   background: linear-gradient(to left,  #bdc3c7,#2c3e50);
   border-radius: 10px;
   padding: 10px;
+  border: 1px solid whitesmoke;
 
 }
 .asset-img{
@@ -121,6 +127,9 @@ span{
 .inner-card-content{
   display: flex;
   flex-direction:column;
+}
+h2{
+  
 }
 .individ-cards{
   gap: 5px;
