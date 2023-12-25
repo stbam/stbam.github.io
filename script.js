@@ -9,7 +9,7 @@ const projects = [ //Takes array info of the card and in generateProjectCard fun
 
     ,{
       title: "Scribble Book",
-      image: "assets/scribble2.png",
+      image: "assets/book.png",
       madeWith: ["React", "Nodejs", "JavaScript"],
       liveDemoLink: "https://scribblebook-frontend.onrender.com",
       sourceLink: "https://github.com/stbam/login-signup",
