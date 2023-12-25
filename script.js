@@ -67,4 +67,13 @@ const projects = [ //Takes array info of the card and in generateProjectCard fun
     const projectCardHTML = generateProjectCard(project);
     projectsContainer.innerHTML += projectCardHTML;
   });
-    
+
+  document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });

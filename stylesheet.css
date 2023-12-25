@@ -12,7 +12,7 @@ h2{
 }
 .App{
   display: grid;
-  grid-template-rows:0fr 1fr 2fr;
+  grid-template-rows:0fr 1fr 2fr ;
 /**/
 }
 .name{
@@ -103,6 +103,7 @@ span{
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   gap: 10px;
+  margin-bottom:100px ; /*lazy fix for spacing*/
 
 }
 
@@ -167,4 +168,13 @@ a{
 }
 #nodejslogo{
  
+}
+.thoughts{
+
+  display: flex;
+  justify-content: center;
+}
+ul{
+  font-size: 20px;
+  color: white;
 }
