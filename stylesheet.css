@@ -127,7 +127,7 @@ span{
     transition: transform 0.3s ease-out;
 }
 .asset-img:hover{
-  transform: scale(2c); /* Adjust the scale factor as needed */
+  transform: scale(2); /* Adjust the scale factor as needed */
 }
 .inner-card-content{
   display: flex;
