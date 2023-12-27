@@ -1,6 +1,16 @@
 const projects = [ //Takes array info of the card and in generateProjectCard func it plugs it in for all projects
    {
-    title:"Cv Application",
+
+   
+title:"Mini Message Board",
+image:"assets/Message Board.png",
+madeWith:["Nodejs","Html","Css","JavaScript"],
+liveDemoLink:"",
+sourceLink:"https://github.com/stbam/Mini-message-board"
+}
+
+  ,{
+    title:"Cv Application Maker",
     image:"assets/Cvapplication.png",
     madeWith:["React","Html","Css"],
     liveDemoLink:"https://cvapplicationgenerator.pages.dev",
@@ -44,7 +54,15 @@ const projects = [ //Takes array info of the card and in generateProjectCard fun
     `
 }
   */
+document.querySelectorAll('a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}); 
   
   function generateProjectCard(project) {
     return `
@@ -67,4 +85,6 @@ const projects = [ //Takes array info of the card and in generateProjectCard fun
     const projectCardHTML = generateProjectCard(project);
     projectsContainer.innerHTML += projectCardHTML;
   });
-    
+
+  
+  
