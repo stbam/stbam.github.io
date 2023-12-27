@@ -5,7 +5,7 @@ const projects = [ //Takes array info of the card and in generateProjectCard fun
 title:"Mini Message Board",
 image:"assets/Message Board.png",
 madeWith:["Nodejs","Html","Css","JavaScript"],
-liveDemoLink:"https://mini-message-board-production-008e.up.railway.app/index",
+liveDemoLink:"https://message-chat-board.up.railway.app/index",
 sourceLink:"https://github.com/stbam/Mini-message-board"
 }
 
